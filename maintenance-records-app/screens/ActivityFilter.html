@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Activity filters</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body style="margin:0;background:#fff">
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="scr" style="width:390px;height:844px">
+  <div class="top"><div class="l"><a class="back" aria-label="Back" href="AdminActivity.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"></path></svg></a><h1 class="t">Activity</h1></div></div>
+  <div class="card m14"><div class="row"><div class="n">10:42 Test Engineer signed Task card 1042</div></div><div class="row"><div class="n">10:15 Test Technician viewed Maintenance manual Rev 7</div></div></div>
+  <div class="scrim"></div>
+  <div class="sheet" role="dialog" aria-label="Filters" style="top:88px">
+    <div class="grab"></div>
+    <div class="top"><h2 class="t" style="font-size:26px">Filters</h2><a class="link" style="font-size:17px" href="ActivityFilter.html">Reset</a></div>
+    <h3 class="h3">Person</h3>
+    <div class="pills m8"><span class="pill on">Everyone</span><span class="pill">Test Technician</span><span class="pill">Test Engineer</span></div>
+    <h3 class="h3">Date</h3>
+    <div class="pills m8"><span class="pill">Today</span><span class="pill on">Last 7 days</span><span class="pill">Last 30 days</span><span class="pill">Custom</span></div>
+    <h3 class="h3">Action</h3>
+    <div class="pills m8"><span class="pill on">Signed</span><span class="pill on">Denied</span><span class="pill">Viewed</span><span class="pill">Shared</span><span class="pill">Downloaded</span><span class="pill">Access changed</span></div>
+    <h3 class="h3">Document or aircraft</h3>
+    <div class="inp ph m8"><svg class="i s" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5 21 21"></path></svg>Task card 1042, ZS-XXX…</div>
+    <div class="spacer"></div>
+    <a class="btn m20" href="AdminActivity.html">Show 14 results</a>
+  </div>
+</div>
+</x-dc>
+
+</body>
+</html>

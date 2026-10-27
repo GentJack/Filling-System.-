@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Scan review</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body style="margin:0;background:#fff">
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="scr" style="width:390px;height:844px">
+  <div class="top"><div class="l"><a class="back" aria-label="Back" href="Camera.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"></path></svg></a><h1 class="t">Review scan</h1></div><button class="link">Edit</button></div>
+  <p class="sub" style="padding-left:58px">3 pages · Drag to reorder</p>
+  <div class="grid2 m20" style="grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
+    <div class="thumb"><div class="bar h" style="height:8px"></div><div class="bar" style="height:6px"></div><div class="bar w80" style="height:6px"></div><div class="bar w60" style="height:6px"></div><div class="bar" style="height:6px"></div><span class="n">1</span></div>
+    <div class="thumb"><div class="bar h" style="height:8px"></div><div class="bar" style="height:6px"></div><div class="bar w90" style="height:6px"></div><div class="bar w80" style="height:6px"></div><div class="bar" style="height:6px"></div><span class="n">2</span></div>
+    <div class="thumb" style="border-color:var(--link);box-shadow:0 0 0 3px #D6E4FD"><div class="bar h" style="height:8px"></div><div class="bar" style="height:6px"></div><div class="bar w60" style="height:6px"></div><div class="bar w90" style="height:6px"></div><span class="n">3</span></div>
+  </div>
+  <a class="btn sec m14" style="border-style:dashed" href="Camera.html">+ Add page</a>
+  <h2 class="h3">Page 3 selected</h2>
+  <div class="grid2 m8" style="grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
+    <a class="btn sec sm" style="padding:0" href="Camera.html">Retake</a>
+    <button class="btn sec sm" style="padding:0">Crop</button>
+    <button class="btn dngo sm" style="padding:0">Delete</button>
+  </div>
+  <div class="banner warn"><svg class="i s" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"></path><path d="M12 10v4M12 17v.5"></path></svg><div><b>Page 2 is blurry</b>Retake it so the text can be read.</div></div>
+  <div class="spacer"></div>
+  <a class="btn" href="SaveScan.html">Continue</a>
+</div>
+</x-dc>
+
+</body>
+</html>

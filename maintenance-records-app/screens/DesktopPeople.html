@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Desktop people and access</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body style="margin:0;background:#fff">
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="desk" style="width:1280px;height:800px">
+  <nav class="side" aria-label="Main">
+    <div class="logo" style="margin-bottom:20px">YOUR LOGO</div>
+    <div class="nav">Home</div>
+    <div class="nav">Folders</div>
+    <div class="nav">To sign<span class="dotn" style="margin-left:auto">3</span></div>
+    <div class="nav on">People and access</div>
+    <a class="nav" href="DesktopActivity.html">Activity log</a>
+    <div class="nav">Settings</div>
+    <div style="margin-top:auto;display:flex;gap:10px;align-items:center"><div class="av navy">TA</div><div><div style="font-weight:700;font-size:15px">Test Admin</div><div class="sub" style="font-size:13px">Admin</div></div></div>
+  </nav>
+  <main class="main">
+    <div style="display:flex;justify-content:space-between;align-items:center"><h1 class="t big" style="font-size:40px">People and access</h1><div style="display:flex;gap:10px"><a class="btn sec sm" href="AccessRequests.html">Access requests (2)</a><a class="btn sm" href="AddPerson.html">Add person</a></div></div>
+    <div class="pills" style="margin-top:20px"><div class="inp ph" style="width:320px;height:46px;border-radius:23px;font-size:16px"><svg class="i s" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5 21 21"></path></svg>Find a person</div><span class="pill on">All roles</span><span class="pill">Active</span><span class="pill">Deactivated</span></div>
+    <div class="card" style="margin-top:20px">
+      <table class="tbl">
+        <thead><tr><th>Person</th><th>Role</th><th class="c">Manuals</th><th class="c">Task cards</th><th class="c">Technical logs</th><th class="c">Releases (CRS)</th><th>Last sign-in</th></tr></thead>
+        <tbody>
+          <tr><td><div style="display:flex;gap:12px;align-items:center"><div class="av">TA</div><b>Test Admin</b></div></td><td>Admin</td><td class="c"><span class="lvl on">Edit</span></td><td class="c"><span class="lvl on">Edit</span></td><td class="c"><span class="lvl on">Edit</span></td><td class="c"><span class="lvl on">Edit</span></td><td>Today, 09:30</td></tr>
+          <tr><td><div style="display:flex;gap:12px;align-items:center"><div class="av">TT</div><b>Test Technician</b></div></td><td>Technician</td><td class="c"><span class="lvl on">View</span></td><td class="c"><span class="lvl on">Edit</span></td><td class="c"><span class="lvl on">Edit</span></td><td class="c"><span class="lvl none">None</span></td><td>Today, 08:55</td></tr>
+          <tr><td><div style="display:flex;gap:12px;align-items:center"><div class="av">TE</div><b>Test Engineer</b></div></td><td>Certifying Engineer</td><td class="c"><span class="lvl on">View</span></td><td class="c"><span class="lvl on">Sign</span></td><td class="c"><span class="lvl on">Edit</span></td><td class="c"><span class="lvl on">Sign</span></td><td>Today, 10:42</td></tr>
+          <tr><td><div style="display:flex;gap:12px;align-items:center"><div class="av">TP</div><b>Test Planner</b></div></td><td>Planning and Stores</td><td class="c"><span class="lvl on">View</span></td><td class="c"><span class="lvl on">View</span></td><td class="c"><span class="lvl on">View</span></td><td class="c"><span class="lvl none">None</span></td><td>Today, 08:55</td></tr>
+          <tr><td><div style="display:flex;gap:12px;align-items:center"><div class="av">TU</div><b>Test Auditor</b></div></td><td>Auditor</td><td class="c"><span class="lvl on">View</span></td><td class="c"><span class="lvl on">View</span></td><td class="c"><span class="lvl on">View</span></td><td class="c"><span class="lvl on">View</span></td><td>Today, 08:02</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="banner info" style="margin-top:20px"><svg class="i s" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5M12 7.5v.5"></path></svg><div>Select any cell to change a person's access to that folder. Every change is recorded in the activity log.</div></div>
+  </main>
+</div>
+</x-dc>
+
+</body>
+</html>

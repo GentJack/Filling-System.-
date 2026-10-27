@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Activity log</title>
+</head>
+<body style="margin:0;background:#fff">
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+button,input,select{font-family:inherit}
+a{text-decoration:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #FFFFFF; font-family: 'Lato', system-ui, sans-serif; color: #0B0B50; display: flex; flex-direction: column; padding: 24px 20px 24px; overflow: hidden">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <div style="display: flex; align-items: center; gap: 14px">
+      <a href="AdminPeople.html" aria-label="Back" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #0B0B50">
+        <svg aria-hidden="true" width="24" height="24" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 8 12l7 7"></path></svg>
+      </a>
+      <h1 style="margin: 0; font-size: 32px; font-weight: 300">Activity</h1>
+    </div>
+    <a href="ExportActivity.html" style="min-height: 44px; padding: 0 4px; background: none; border: 0; color: #1A66E8; font-size: 19px; font-weight: 700;display:inline-flex;align-items:center">Export</a>
+  </div>
+  <div style="display: flex; gap: 10px; margin-top: 14px">
+    <button style="height: 46px; padding: 0 16px; border-radius: 23px; border: 1.5px solid #E3E4F0; background: #FFFFFF; color: #0B0B50; font-size: 16px; display: flex; align-items: center; gap: 8px; cursor: pointer">Everyone<svg aria-hidden="true" width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
+    <button style="height: 46px; padding: 0 16px; border-radius: 23px; border: 1.5px solid #E3E4F0; background: #FFFFFF; color: #0B0B50; font-size: 16px; display: flex; align-items: center; gap: 8px; cursor: pointer">Today<svg aria-hidden="true" width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
+    <a href="ActivityFilter.html" style="height: 46px; padding: 0 16px; border-radius: 23px; border: 1.5px solid #E3E4F0; background: #FFFFFF; color: #0B0B50; font-size: 16px; display: flex; align-items: center; gap: 8px">All actions<svg aria-hidden="true" width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></a>
+  </div>
+  <h2 style="margin: 20px 0 0; font-size: 16px; font-weight: 700; color: #4B4B66">Today</h2>
+  <div style="margin-top: 10px; border: 1.5px solid #E3E4F0; border-radius: 22px; overflow: hidden">
+    <div style="display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 10px; padding: 14px 18px; border-bottom: 1.5px solid #E3E4F0">
+      <span style="font-size: 17px; font-weight: 700">10:42</span>
+      <div><div style="font-size: 17px; line-height: 1.3"><b>Test Engineer</b> signed Task card 1042 · ZS-XXX (v2)</div><div style="margin-top: 4px; font-size: 14px; color: #4B4B66">Phone · App</div></div>
+    </div>
+    <div style="display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 10px; padding: 14px 18px; border-bottom: 1.5px solid #E3E4F0">
+      <span style="font-size: 17px; font-weight: 700">10:15</span>
+      <div><div style="font-size: 17px; line-height: 1.3"><b>Test Technician</b> viewed Maintenance manual Rev 7</div><div style="margin-top: 4px; font-size: 14px; color: #4B4B66">Phone · App</div></div>
+    </div>
+    <div style="display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 10px; padding: 14px 18px; border-bottom: 1.5px solid #E3E4F0">
+      <span style="font-size: 17px; font-weight: 700">09:58</span>
+      <div>
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 8px"><div style="font-size: 17px; line-height: 1.3"><b>Test Technician</b> tried to open Releases (CRS)</div><span style="padding: 4px 12px; border-radius: 14px; background: #FBE4E2; color: #B3261E; font-size: 14px; font-weight: 700">Denied</span></div>
+        <div style="margin-top: 4px; font-size: 14px; color: #4B4B66">Phone · App</div>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 10px; padding: 14px 18px; border-bottom: 1.5px solid #E3E4F0">
+      <span style="font-size: 17px; font-weight: 700">09:30</span>
+      <div><div style="font-size: 17px; line-height: 1.3"><b>Test Admin</b> changed access for Test Technician</div><div style="margin-top: 4px; font-size: 14px; color: #4B4B66">Laptop · Browser</div></div>
+    </div>
+    <div style="display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 10px; padding: 14px 18px; border-bottom: 1.5px solid #E3E4F0">
+      <span style="font-size: 17px; font-weight: 700">08:55</span>
+      <div><div style="font-size: 17px; line-height: 1.3"><b>Test Planner</b> downloaded Parts certificate 118</div><div style="margin-top: 4px; font-size: 14px; color: #4B4B66">Laptop · Browser</div></div>
+    </div>
+    <div style="display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 10px; padding: 14px 18px">
+      <span style="font-size: 17px; font-weight: 700">08:02</span>
+      <div><div style="font-size: 17px; line-height: 1.3"><b>Test Auditor</b> signed in</div><div style="margin-top: 4px; font-size: 14px; color: #4B4B66">Laptop · Browser</div></div>
+    </div>
+  </div>
+</div>
+</x-dc>
+
+
+
+</body></html>

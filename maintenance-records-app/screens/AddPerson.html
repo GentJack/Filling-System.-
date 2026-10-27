@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Add person</title>
+</head>
+<body style="margin:0;background:#fff">
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+button,input,select{font-family:inherit}
+a{text-decoration:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #FFFFFF; font-family: 'Lato', system-ui, sans-serif; color: #0B0B50; display: flex; flex-direction: column; padding: 24px 20px 24px; overflow: hidden">
+  <div style="display: flex; align-items: center; gap: 14px">
+    <a href="AdminPeople.html" aria-label="Back" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #0B0B50">
+      <svg aria-hidden="true" width="24" height="24" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 8 12l7 7"></path></svg>
+    </a>
+    <h1 style="margin: 0; font-size: 32px; font-weight: 300">Add person</h1>
+  </div>
+  <div style="margin-top: 22px; display: flex; flex-direction: column; gap: 18px">
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="fullname" style="font-weight: 700; font-size: 16px">Full name</label>
+      <input id="fullname" type="text" placeholder="First and last name" style="width: 100%; height: 52px; box-sizing: border-box; border: 1.5px solid #E3E4F0; background: #F2F3FB; border-radius: 26px; padding: 0 20px; font-size: 17px; color: #0B0B50">
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="workmail" style="font-weight: 700; font-size: 16px">Work email</label>
+      <input id="workmail" type="email" placeholder="name@yourairline.com" style="width: 100%; height: 52px; box-sizing: border-box; border: 1.5px solid #E3E4F0; background: #F2F3FB; border-radius: 26px; padding: 0 20px; font-size: 17px; color: #0B0B50">
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="role" style="font-weight: 700; font-size: 16px">Role</label>
+      <div style="position: relative">
+        <sc-raw-select id="role" style="width: 100%; height: 52px; box-sizing: border-box; border: 1.5px solid #E3E4F0; background: #F2F3FB; border-radius: 26px; padding: 0 48px 0 20px; font-size: 17px; color: #0B0B50; appearance: none; -webkit-appearance: none"><option>Technician</option><option>Certifying Engineer</option><option>Planning and Stores</option><option>Auditor</option><option>Folder owner</option><option>Admin</option></sc-raw-select>
+        <svg aria-hidden="true" width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="#0B0B50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 20px; top: 16px; pointer-events: none"><path d="m6 9 6 6 6-6"></path></svg>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top: 20px; display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border-radius: 18px; background: #F2F3FB">
+    <svg aria-hidden="true" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#0B0B50" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 1px"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5M12 8h.01"></path></svg>
+    <span style="font-size: 15px; line-height: 1.4">New people start with no access to any folder. Set their folder access after adding them.</span>
+  </div>
+  <a href="AdminFolderAccess.html" style="margin-top: 24px; height: 58px; border-radius: 29px; background: #0B0B50; color: #FFFFFF; font-size: 20px; display: flex; align-items: center; justify-content: center">Add and set access</a>
+  <p style="margin: 12px 0 0; font-size: 14px; color: #4B4B66; text-align: center">An email with a sign-in link is sent. This is recorded in the activity log.</p>
+</div>
+</x-dc>
+
+
+
+</body></html>

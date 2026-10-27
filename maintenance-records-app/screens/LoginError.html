@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sign in error</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body style="margin:0;background:#fff">
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="scr" style="width:390px;height:844px">
+  <div class="logo" style="margin:72px auto 0">YOUR LOGO</div>
+  <h1 class="t big tc" style="margin-top:56px">Maintenance Records</h1>
+  <p class="sub tc m8">Sign in with your work email</p>
+  <div class="banner bad" role="alert">
+    <svg class="i s" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v6M12 16.5v.5"></path></svg>
+    <div><b>Email or password is wrong</b>2 attempts left before your account is locked for 15 minutes.</div>
+  </div>
+  <label class="lbl" for="e">Work email</label>
+  <div class="inp err" id="e">te***@yourairline.com</div>
+  <label class="lbl" for="p">Password</label>
+  <div class="inp err" id="p">••••••••</div>
+  <a class="btn m28" href="LoginCode.html">Sign in</a>
+  <a class="link c m14" href="Forgot.html">Forgot password?</a>
+  <p class="foot">Authorised staff only. Your activity is recorded.</p>
+</div>
+</x-dc>
+
+</body>
+</html>
